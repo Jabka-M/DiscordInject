@@ -22,5 +22,5 @@ node inject.js
 ```
 
 Notes:
-	make sure Discord installed in %LOCALAPPDATA%\Discord.
+	make sure Discord installed in %LOCALAPPDATA%\Discord.\n
 	Discord process gonna be terminated automatically.
