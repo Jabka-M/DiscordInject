@@ -21,8 +21,6 @@ Create file code.js in cloned folder and write your code there (code can use glo
 node inject.js
 ```
 
-Notes:
-	make sure Discord installed in %LOCALAPPDATA%\Discord.
-	
-	
+Notes:  
+	make sure Discord installed in %LOCALAPPDATA%\Discord.  
 	Discord process gonna be terminated automatically.
