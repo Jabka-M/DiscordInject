@@ -9,7 +9,7 @@
     const RegExpApp = /app\-[\w\.]+/gi;
     const RegExpCore = /discord_desktop_core\-\d/gi;
     const discordPath = `${process.env.LOCALAPPDATA}\\Discord\\`;
-    const runFile = require("child_process").execFile;
+    const {spawn} = require("child_process");
     const mainScreen = `./tmp/app/mainScreen.js`;
     let executablePath;
     await fs.access(discordPath, fs.constants.F_OK, (err) => {
@@ -96,6 +96,8 @@
         console.log("Cleaning up...");
         await fse.remove("./core.asar");
         await fse.remove("./tmp");
+		console.log("Starting Discord");
+		await spawn(executablePath, [], {detached: true, stdio: ["ignore", "ignore", "ignore"]}).unref();
         console.log("Success");
     }, 5000);
 })();
