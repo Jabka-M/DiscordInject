@@ -22,5 +22,6 @@ node inject.js
 ```
 
 Notes:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Does NOT work with PTB or Canary Discord.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Make sure Discord installed in %LOCALAPPDATA%\Discord.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discord process gonna be terminated automatically.
