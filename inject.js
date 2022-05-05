@@ -6,8 +6,6 @@
     const util = require("util");
     const readFile = util.promisify(fs.readFile);
     const writeFile = util.promisify(fs.writeFile);
-    const RegExpApp = /app\-[\w\.]+/gi;
-    const RegExpCore = /discord_desktop_core\-\d/gi;
     const discordPath = `${process.env.LOCALAPPDATA}\\Discord\\`;
     const {spawn} = require("child_process");
     const mainScreen = `./tmp/app/mainScreen.js`;
@@ -18,7 +16,7 @@
             process.exit(1);
         }
     });
-    let appFolder = fs.readdirSync(`${process.env.LOCALAPPDATA}\\Discord\\`).filter((value) => {return RegExpApp.exec(value)});
+    let appFolder = fs.readdirSync(`${process.env.LOCALAPPDATA}\\Discord\\`).filter((value) => {return /app\-[\w\.]+/gi.exec(value)});
     if (!appFolder.length) {
         console.error(`App folder does not exists in ${process.env.LOCALAPPDATA}\\Discord\\`);
         process.exit(1);
@@ -38,7 +36,7 @@
             process.exit(1);
         }
     });
-    let coreFolder = fs.readdirSync(modulesFolder).filter((value) => {return RegExpCore.exec(value)});
+    let coreFolder = fs.readdirSync(modulesFolder).filter((value) => {return /discord_desktop_core\-\d/gi.exec(value)});
     if (!coreFolder.length) {
         console.error(`Desktop core folder does not exists in ${modulesFolder}`);
         process.exit(1);
@@ -60,7 +58,7 @@
     console.log("Unpacking discord core...");
     await fse.remove("./tmp");
     await util.promisify(fs.copyFile)(core, "./core.asar");
-    await util.promisify(fs.copyFile)(core, "./core.asar.backup");
+	await fs.access("./core.asar.backup", fs.constants.F_OK, async () => {await util.promisify(fs.copyFile)(core, "./core.asar.backup");})
     asar.extractAll("./core.asar", "./tmp");
     await util.promisify(fs.copyFile)(mainScreen, `${mainScreen}.backup`);
     let code = await readFile("./code.js");
