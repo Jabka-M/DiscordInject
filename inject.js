@@ -16,7 +16,7 @@
             process.exit(1);
         }
     });
-    let appFolder = fs.readdirSync(`${process.env.LOCALAPPDATA}\\Discord\\`).filter((value) => {return /app\-[\w\.]+/gi.exec(value)});
+    let appFolder = fs.readdirSync(discordPath).filter((value) => {return /app\-[\w\.]+/gi.exec(value)});
     if (!appFolder.length) {
         console.error(`App folder does not exists in ${process.env.LOCALAPPDATA}\\Discord\\`);
         process.exit(1);
