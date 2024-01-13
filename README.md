@@ -1,6 +1,8 @@
+# OUTDATED:  
+## This project doesn't work because Discord fixed the exploit used here  
+  
 # DiscordInject
 ### JS code injector to discord core
-
 ## How to use:
 
 #### Clone repository
