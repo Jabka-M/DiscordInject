@@ -30,9 +30,13 @@ if ($content.Trim() -ne "module.exports = require('./core.asar');") {
     } else {
         Write-Output "Restored default $($index.FullName)"
         Set-Content -Path $index.FullName -Value "module.exports = require('./core.asar');"
+        pause
+        exit
     }
 } else {
     Write-Output "Injected code from code.js ($($code.Length) bytes)"
     Set-Content -Path $index.FullName -Value $code
     Add-Content -Path $index.FullName -Value "module.exports = require('./core.asar');"
+    pause
+    exit
 }

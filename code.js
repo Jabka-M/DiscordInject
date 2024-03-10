@@ -11,6 +11,7 @@ _style.innerHTML = \`* {
     --background-primary: #000 !important;
     --background-secondary: #000 !important;
     --background-secondary-alt: #000 !important;
+    --background-tertiary: #000 !important;
     --background-accent: #000 !important;
     --background-floating: #000 !important;
     --background-mobile-primary: #000 !important;
@@ -20,12 +21,13 @@ _style.innerHTML = \`* {
     --background-mentioned: #001 !important;
     --background-mentioned-hover: #000 !important;
     --background-modifier-selected: #111 !important;
-    --interactive-active: #600 !important;
+    --interactive-active: #fc0 !important;
     --text-normal: #ccc !important;
-    --text-link: #fc0 !important;
+    /*--text-link: #fc0 !important;*/
     --scrollbar-thin-thumb: #111 !important;
     --scrollbar-thin-track: #111 !important;
     --channeltextarea-background: #111 !important;
+    --deprecated-store-bg: #000 !important;
     font-family: cursive;
     font-style: italic;
 }
