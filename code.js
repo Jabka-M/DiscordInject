@@ -1,8 +1,8 @@
 const {BrowserWindow} = require("electron");
 
 let int = setInterval(() => {
-    const window = BrowserWindow.getAllWindows()[0];
-    if (window.title.toLowerCase().includes("update")) return;
+    const window = Array.from(BrowserWindow.getAllWindows()).find(win => !win.title.toLowerCase().includes("update"));
+    if (window === undefined) return;
     clearInterval(int);
     window.webContents.executeJavaScript(`const _style = document.createElement("style");
 _style.innerHTML = \`* {
