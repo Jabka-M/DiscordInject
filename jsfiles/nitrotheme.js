@@ -36,6 +36,12 @@ _style.innerHTML = \`
     --bg-overlay-opacity-home-card: 0.8;
     --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-4);
     --bg-overlay-opacity-floating: 0.65;
+    --background-base-lower: var(--bg-overlay-4) !important;
+    --background-base-low: var(--bg-overlay-4) !important;
+    --background-surface-high: var(--bg-overlay-4) !important;
+    --chat-background-default: var(--bg-overlay-4) !important;
+    --bg-surface-raised: var(--bg-overlay-4) !important;
+    --autocomplete-bg: var(--bg-overlay-4) !important;
     --__spoiler-background-color--hidden: var(--primary-630);
     --__spoiler-background-color--hidden--hover: hsl(var(--primary-630-hsl)/0.8);
     --__spoiler-background-color--hidden: var(--primary-700);
@@ -94,18 +100,50 @@ _style.innerHTML = \`
 .visual-refresh .bg__960e4 {
     background: var(--bg-overlay-app-frame,var(--bg-base-tertiary));
 }
+
+.sidebarRegionScroller__23e6b {
+    background: var(--bg-overlay-4) !important;
+}
+
+.accountProfileCard__1fed1 {
+    background-color: var(--bg-overlay-4) !important;
+}
+
+.cardPrimary__73069, .cardPrimary__73069.editable__73069 {
+    background-color: var(--bg-overlay-4) !important;
+}
+
+.privateChannels__35e86 {
+    background: var(--bg-overlay-4) !important;
+}
+
+.scroller__99e7c {
+    background: var(--bg-overlay-4) !important;
+}
+
+.contentWrapper__08434 {
+    background: var(--bg-overlay-4) !important;
+}
+
+.scrollableContent__927fc {
+    background: var(--bg-overlay-4) !important;
+}
+
+.searchBarContainer__927fc {
+    background: var(--bg-overlay-4) !important;
+}
 \`;
 document.head.appendChild(_style);
 setTimeout(() => {
-	// <img width="48" alt="Значок приложения" draggable="false" src="/assets/e5f2a55421a6dc7e.webp">
-	let _logo = document.querySelector(".childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8:not(.acronym__6e9f8)");
-	_logo?.querySelector("svg")?.remove();
-	let _newlogo = document.createElement("img");
-	_newlogo.setAttribute("width", "48");
-	_newlogo.setAttribute("alt", "Значок приложения");
-	_newlogo.setAttribute("draggable", "false");
-	_newlogo.setAttribute("src", "/assets/e5f2a55421a6dc7e.webp");
-	_logo?.appendChild(_newlogo);
+    // <img width="48" alt="Значок приложения" draggable="false" src="/assets/e5f2a55421a6dc7e.webp">
+    let _logo = document.querySelector(".childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8:not(.acronym__6e9f8)");
+    _logo?.querySelector("svg")?.remove();
+    let _newlogo = document.createElement("img");
+    _newlogo.setAttribute("width", "48");
+    _newlogo.setAttribute("alt", "Значок приложения");
+    _newlogo.setAttribute("draggable", "false");
+    _newlogo.setAttribute("src", "/assets/e5f2a55421a6dc7e.webp");
+    _logo?.appendChild(_newlogo);
 }, 3000);
 `);
 }, 100);
