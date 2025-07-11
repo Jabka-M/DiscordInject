@@ -132,6 +132,10 @@ _style.innerHTML = \`
 .searchBarContainer__927fc {
     background: var(--bg-overlay-4) !important;
 }
+
+.autocomplete__13533 {
+    background: var(--autocomplete-bg) !important
+}
 \`;
 document.head.appendChild(_style);
 setTimeout(() => {
