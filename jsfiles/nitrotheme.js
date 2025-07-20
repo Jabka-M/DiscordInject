@@ -7,6 +7,8 @@ let int = setInterval(() => {
     window.webContents.executeJavaScript(`const _style = document.createElement("style");
 _style.innerHTML = \`
 .theme-dark {
+    --modal-background: var(--bg-overlay-4) !important;
+    --modal-footer-background: var(--bg-overlay-4) !important;
     --bg-overlay-opacity-1: 0.9;
     --bg-overlay-opacity-2: 0.85;
     --bg-overlay-opacity-3: 0.8;
@@ -106,11 +108,51 @@ _style.innerHTML = \`
 }
 
 .accountProfileCard__1fed1 {
-    background-color: var(--bg-overlay-4) !important;
+    background: var(--bg-overlay-4) !important;
 }
 
 .cardPrimary__73069, .cardPrimary__73069.editable__73069 {
-    background-color: var(--bg-overlay-4) !important;
+    background: var(--bg-overlay-4) !important;
+}
+
+.messagesPopoutWrap__45690 {
+    background: var(--bg-overlay-4) !important;
+}
+
+.guildContainer__5dba5 {
+    background: var(--bg-overlay-4) !important;
+}
+
+.card__4d7bb {
+    background: var(--bg-overlay-4) !important;
+}
+
+.wrapper__5b98e {
+    background: var(--bg-overlay-4) !important;
+}
+
+.quickswitcher_ac6cb0 {
+    background: var(--bg-overlay-4) !important;
+}
+
+.searchBar__5ec2f {
+    background: var(--bg-overlay-4) !important;
+}
+
+.shopCardDark_c3d04b {
+    background: var(--bg-overlay-4) !important;
+}
+
+.darkCardBackground_c3d04b {
+    background: var(--bg-overlay-4) !important;
+}
+
+.skuSelectModalContent_e50a4d, .skuSelectModalHeader_e50a4d {
+    background: var(--bg-overlay-4) !important;
+}
+
+.container__551b0 {
+    background: var(--bg-overlay-4) !important;
 }
 
 .privateChannels__35e86 {
