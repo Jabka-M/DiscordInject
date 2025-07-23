@@ -178,6 +178,10 @@ _style.innerHTML = \`
 .autocomplete__13533 {
     background: var(--autocomplete-bg) !important
 }
+
+.root__49fc1 {
+    background: var(--modal-background) !important;
+}
 \`;
 document.head.appendChild(_style);
 setTimeout(() => {
