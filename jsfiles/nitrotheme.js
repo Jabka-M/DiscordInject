@@ -182,6 +182,10 @@ _style.innerHTML = \`
 .root__49fc1 {
     background: var(--modal-background) !important;
 }
+
+.tooltip__382e7 {
+    background: var(--bg-overlay-4) !important;
+}
 \`;
 document.head.appendChild(_style);
 setTimeout(() => {
