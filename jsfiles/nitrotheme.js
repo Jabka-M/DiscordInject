@@ -190,6 +190,10 @@ _style.innerHTML = \`
 .sidebar_c48ade::after {
     background: var(--bg-overlay-4) !important;
 }
+
+.align-chat-input .scrollerSpacer__36d07 {
+    height: 35px;
+}
 \`;
 document.head.appendChild(_style);
 setTimeout(() => {
