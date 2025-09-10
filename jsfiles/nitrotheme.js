@@ -186,6 +186,10 @@ _style.innerHTML = \`
 .tooltip__382e7 {
     background: var(--bg-overlay-4) !important;
 }
+
+.sidebar_c48ade::after {
+    background: var(--bg-overlay-4) !important;
+}
 \`;
 document.head.appendChild(_style);
 setTimeout(() => {
