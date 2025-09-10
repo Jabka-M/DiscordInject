@@ -192,7 +192,7 @@ _style.innerHTML = \`
 }
 
 .align-chat-input .scrollerSpacer__36d07 {
-    height: 35px;
+    height: 35px !important;
 }
 \`;
 document.head.appendChild(_style);
