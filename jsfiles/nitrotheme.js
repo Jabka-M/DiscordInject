@@ -183,7 +183,7 @@ _style.innerHTML = \`
     background: var(--modal-background) !important;
 }
 
-.tooltip__382e7 {
+[class*='tooltip__'] {
     background: var(--bg-overlay-4) !important;
 }
 
