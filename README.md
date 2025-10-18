@@ -1,4 +1,4 @@
-# DiscordInject V2 (+ AMOLED desktop theme)
+# DiscordInject V2 (+ Nitro gradient desktop theme)
 ### JS code injector to discord core
 ## How to use:
 
