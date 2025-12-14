@@ -194,6 +194,33 @@ _style.innerHTML = \`
 .align-chat-input .scrollerSpacer__36d07 {
     height: 35px !important;
 }
+
+.container_dfb989 {
+    /*--custom-display-name-styles-gradient-start-color: #7f00ff !important;
+    --custom-display-name-styles-gradient-end-color: #268fe0 !important;
+    --custom-display-name-styles-main-color: #7f00ff !important;
+    --custom-display-name-styles-wrap: nowrap !important;
+    --custom-display-name-styles-font-opacity: 1 !important;*/
+    animation-iteration-count: infinite !important;
+    animation-play-state: running !important;
+    translation: none !important;
+    opacity: 1 !important;
+}
+
+.container_dfb989 .gradient_dfb989 {
+    background: linear-gradient(to bottom right, var(--custom-display-name-styles-gradient-start-color) 10%, var(--custom-display-name-styles-gradient-end-color) 90%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    background-size: 100% auto !important;
+    -webkit-text-fill-color: transparent !important;
+    position: relative !important;
+    z-index: 0 !important;
+    animation-iteration-count: infinite !important;
+}
+
+.container_dfb989 .solid_dfb989 {
+    color: var(--custom-display-name-styles-main-color) !important;
+}
 \`;
 document.head.appendChild(_style);
 setTimeout(() => {
